@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- widget-chart.html  21 Nov 2019 03:49:32 GMT -->
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Otika - Admin Dashboard Template</title>
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/css/app.min.css">
+  <link rel="stylesheet" href="assets/bundles/jqvmap/dist/jqvmap.min.css">
+  <link rel="stylesheet" href="assets/bundles/flag-icon-css/css/flag-icon.min.css">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <!-- Custom style CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.ico' />
+</head>
+
+<body style="    font-family: revert;">
+  <div class="loader"></div>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar sticky">
+        <div class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
+									collapse-btn"> <i data-feather="align-justify"></i></a></li>
+            <li><a href="#" class="nav-link nav-link-lg fullscreen-btn">
+                <i data-feather="maximize"></i>
+              </a></li>
+            <li>
+              <form class="form-inline mr-auto">
+                <div class="search-element">                 
+                  
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+        <ul class="navbar-nav navbar-right">   
+          <li class="dropdown"><a href="#" data-toggle="dropdown"
+              class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="assets/img/user.png"
+                class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
+            <div class="dropdown-menu dropdown-menu-right pullDown">
+              <div class="dropdown-title">Hello Pankaj</div>
+              <a href="profile.html" class="dropdown-item has-icon"> <i class="far
+										fa-user"></i> Profile
+              </a> 
+              <div class="dropdown-divider"></div>
+              <a href="auth-login.html" class="dropdown-item has-icon text-danger"> <i class="fas fa-sign-out-alt"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="index.html"> <img alt="image" src="assets/img/logo.png" class="header-logo" /><span  
+                class="logo-name"></span>  
+            </a>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="menu-header">Main</li>
+            <li class="dropdown active">
+              <a href="index.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
+            </li>            
+            <li class="dropdown">
+              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="command"></i><span>Reports</span></a>
+              <ul class="dropdown-menu">                
+                <li><a class="nav-link" href="">Efficiency Report</a></li>
+                <li><a class="nav-link" href="">Production Report</a></li>
+                <li><a class="nav-link" href="">Waste Report</a></li>
+				<li><a class="nav-link" href="">Consumption Report</a></li>
+				<li><a class="nav-link" href="">Stoppages Report </a></li>
+              </ul>
+            </li>            
+            <li class="menu-header">Master Data</li>
+            <li class="dropdown">
+              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="copy"></i><span>Stoppage</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="alert.html">Reasons</a></li>                
+              </ul>
+            </li>
+			<li class="dropdown">
+              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="user"></i><span>User</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="alert.html">Add User</a></li>                
+              </ul>
+			  <ul class="dropdown-menu">
+                <li><a class="nav-link" href="alert.html">View</a></li>                
+              </ul>
+            </li>
+			<li class="dropdown">
+              <a href="https://watchyourplant.com/User/Login.aspx" class="nav-link"><i data-feather="log-out"></i><span>Logout</span></a>
+            </li>
+            
+          </ul>
+        </aside>
+      </div>
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-body">
+			<div class="row">		
+				<div class="col-5 col-sm-5 col-lg-5" >	</div>		
+				<div class="col-7 col-sm-7 col-lg-7" style="text-align: right;">
+					<input type="radio" name="colors" id="red" checked style="margin: 12px;padding: 4px;"  value="All" onclick="typeFun(1);"><label class="CheckData">All</label>
+					<input type="radio" name="colors" id="blue" style="margin: 12px;padding: 4px;" value="Spinning1" onclick="typeFun(2);"> <label class="CheckData">Spinning Line1</label> 
+					<input type="radio" name="colors" id="red" style="margin: 12px;padding: 4px;" value="Spinning2" onclick="typeFun(3);"><label class="CheckData">Spinning Line2</label>
+					<input type="radio" name="colors" id="blue" style="margin: 12px;padding: 4px;" value="Spinning3" onclick="typeFun(4);"><label class="CheckData">Spinning Line3</label>
+				</div>
+			</div>
+			<div class="row ">
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="card" onclick="typeFun(1);">
+                <div class="card-statistic-4">
+                  <div class="align-items-center justify-content-between">
+                    <div class="row ">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
+                        <div class="card-content">
+                          <h5 class="font-15" style="color:#666666">Efficiency </h5>
+                          <h2 class="mb-3 font-15" style="color:#666666">258</h2>
+                          <p class="mb-0"><span class="col-green">80%</span></p>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                        <div class="banner-img" style="max-width: 120%;">
+                          <img src="assets/img/1.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="card" onclick="typeFun(2);">
+                <div class="card-statistic-4">
+                  <div class="align-items-center justify-content-between">
+                    <div class="row ">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
+                        <div class="card-content">
+                          <h5 class="font-15" style="color:#666666"> Production </h5>
+                          <h2 class="mb-3 font-15" style="color:#666666">1,287</h2>
+                          <p class="mb-0"><span class="col-orange">09%</span></p>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                        <div class="banner-img" style="max-width: 120%;">
+                          <img src="assets/img/2.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="card" onclick="typeFun(3);">
+                <div class="card-statistic-4">
+                  <div class="align-items-center justify-content-between">
+                    <div class="row ">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
+                        <div class="card-content">
+                          <h5 class="font-15" style="color:#666666">Waste </h5>
+                          <h2 class="mb-3 font-15" style="color:#666666">128</h2>
+                          <p class="mb-0"><span class="col-green">18%</span></p>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                        <div class="banner-img" style="max-width: 90%;">
+                          <img src="assets/img/5.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="card" onclick="typeFun(4);">
+                <div class="card-statistic-4">
+                  <div class="align-items-center justify-content-between">
+                    <div class="row ">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pr-0 pt-3">
+                        <div class="card-content">
+                          <h5 class="font-15" style="color:#666666">Consumption </h5>
+                          <h2 class="mb-3 font-15" style="color:#666666">48,697</h2>
+                          <p class="mb-0"><span class="col-green">42%</span> </p>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-0">
+                        <div class="banner-img">
+                          <img src="assets/img/3.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="row graph1" >
+              <div class="col-xl-12 col-md-12 col-lg-12">
+                <div class="card">                  
+                  <div class="card-body">
+				  <h5 class="Efficiency" ><i class="fa fa-caret-right" style="padding: 3px;font-size: 20px;"></i>Efficiency</h5>
+				  <h5 class="Production" style="display:none"><i class="fa fa-caret-right" style="padding: 3px;font-size: 20px;"></i>Production</h5>
+				  <h5 class="Waste" style="display:none"><i class="fa fa-caret-right" style="padding: 3px;font-size: 20px;"></i>Waste</h5>
+				  <h5 class="Consumption" style="display:none"><i class="fa fa-caret-right" style="padding: 3px;font-size: 20px;"></i>Consumption</h5>
+                    <div id="revenue"></div>
+					<ul class="list-inline text-center">
+                      <li class="list-inline-item p-r-30"><i data-feather="arrow-up-circle" class="col-green"></i>
+                        <h5 class="m-b-0">675</h5>
+                        <p class="text-muted font-14 m-b-0">Weekly </p>
+                      </li>
+                      <li class="list-inline-item p-r-30"><i data-feather="arrow-down-circle" class="col-orange"></i>
+                        <h5 class="m-b-0">1,587</h5>
+                        <p class="text-muted font-14 m-b-0">Monthly </p>
+                      </li>
+                      <li class="list-inline-item p-r-30"><i data-feather="arrow-up-circle" class="col-green"></i>
+                        <h5 class="mb-0 m-b-0">45,965</h5>
+                        <p class="text-muted font-14 m-b-0">Yearly </p>
+                      </li>
+                    </ul>                    
+                  </div>
+                </div>
+              </div>              
+            </div>
+            <div class="row graph123" style="display:none">
+              <div class="col-12 col-sm-12 col-lg-6" >
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Efficiency</h4>                    
+                  </div>
+                  <div class="card-body">
+                    <div class="summary">                      
+                      <div class="summary-chart active" data-tab-group="summary-tab" id="summary-chart">
+                        <canvas id="myChart" height="180"></canvas>
+                      </div>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-lg-6" >
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Production</h4>                    
+                  </div>
+                  <div class="card-body">
+                    <canvas id="myChart2" height="180"></canvas>                    
+                  </div>
+                </div>                
+              </div>
+            </div>
+            <div class="row" style="display:none">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card card-statistic-2">
+                  <div class="card-icon shadow-primary bg-cyan">
+                    <i class="fas fa-hiking"></i>
+                  </div>
+                  <div class="card-wrap">
+                    <div class="card-header">
+                      <h4 class="pull-right">New Clients</h4>
+                    </div>
+                    <div class="card-body pull-right">
+                      10,225
+                    </div>
+                  </div>
+                  <div class="card-chart">
+                    <canvas id="chart-1" height="80"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card card-statistic-2">
+                  <div class="card-icon shadow-primary bg-purple">
+                    <i class="fas fa-drafting-compass"></i>
+                  </div>
+                  <div class="card-wrap">
+                    <div class="card-header">
+                      <h4 class="pull-right">Delivered Order</h4>
+                    </div>
+                    <div class="card-body pull-right">
+                      2,857
+                    </div>
+                  </div>
+                  <div class="card-chart">
+                    <canvas id="chart-2" height="80"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="card card-statistic-2">
+                  <div class="card-icon shadow-primary bg-green">
+                    <i class="fas fa-dollar-sign"></i>
+                  </div>
+                  <div class="card-wrap">
+                    <div class="card-header">
+                      <h4 class="pull-right">Total Earning</h4>
+                    </div>
+                    <div class="card-body pull-right">
+                      $17,458
+                    </div>
+                  </div>
+                  <div class="card-chart">
+                    <canvas id="chart-3" height="80"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" style="display:none">
+              <div class="col-12 col-sm-12 col-lg-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Visitors</h4>
+                  </div>
+                  <div class="card-body">
+                    <div id="visitorMap4" data-height="190"></div>
+                  </div>
+                  <div class="card-footer card-footer-grey pt-0">
+                    <div class="statistic-details mt-4 align-items-center justify-content-center">
+                      <div class="statistic-details-item col-sm-4 col-12">
+                        <div class="detail-chart">
+                          <div class="sparkline-line-chart"></div>
+                        </div>
+                        <div class="detail-value">11,365</div>
+                        <div class="detail-name">Visits</div>
+                      </div>
+                      <div class="statistic-details-item col-sm-4 col-12">
+                        <div class="detail-chart">
+                          <div class="sparkline-line-chart"></div>
+                        </div>
+                        <div class="detail-value">32%</div>
+                        <div class="detail-name">Referral</div>
+                      </div>
+                      <div class="statistic-details-item col-sm-4 col-12">
+                        <div class="detail-chart">
+                          <div class="sparkline-line-chart"></div>
+                        </div>
+                        <div class="detail-value">68%</div>
+                        <div class="detail-name">Organic</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mt-4">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-sm-3 col-6 mb-md-0 mb-4 text-center">
+                        <div class="img-shadow flag-icon flag-icon-au"></div>
+                        <div class="mt-2 font-weight-bold text-nowrap">Australia</div>
+                        <div class="text-small text-muted">9,500</div>
+                      </div>
+                      <div class="col-sm-3 col-6 mb-md-0 mb-4 text-center">
+                        <div class="img-shadow flag-icon flag-icon-br"></div>
+                        <div class="mt-2 font-weight-bold text-nowrap">Brazil</div>
+                        <div class="text-small text-muted"><span class="text-primary"><i
+                              class="fas fa-caret-up"></i></span> 7,328</div>
+                      </div>
+                      <div class="col-sm-3 col-6 text-center">
+                        <div class="img-shadow flag-icon flag-icon-in"></div>
+                        <div class="mt-2 font-weight-bold text-nowrap">India</div>
+                        <div class="text-small text-muted"><span class="text-danger"><i
+                              class="fas fa-caret-down"></i></span> 5,830</div>
+                      </div>
+                      <div class="col-sm-3 col-6 text-center">
+                        <div class="img-shadow flag-icon flag-icon-ch"></div>
+                        <div class="mt-2 font-weight-bold text-nowrap">Switzerland</div>
+                        <div class="text-small text-muted">4,763</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-lg-6 mt-lg-0 mt-sm-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Referral URL</h4>
+                  </div>
+                  <div class="card-body">
+                    <canvas id="donutChart" height="170"></canvas>
+                    <div class="mb-4 mt-4">
+                      <div class="text-small float-right font-weight-bold text-muted">558</div>
+                      <div class="font-weight-bold mb-1">Google</div>
+                      <div class="progress" data-height="4" data-toggle="tooltip" title="58%">
+                        <div class="progress-bar bg-success" data-width="58%"></div>
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <div class="text-small float-right font-weight-bold text-muted">338</div>
+                      <div class="font-weight-bold mb-1">Facebook</div>
+                      <div class="progress" data-height="4" data-toggle="tooltip" title="44%">
+                        <div class="progress-bar bg-purple" data-width="44%"></div>
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <div class="text-small float-right font-weight-bold text-muted">238</div>
+                      <div class="font-weight-bold mb-1">Bing</div>
+                      <div class="progress" data-height="4" data-toggle="tooltip" title="32%">
+                        <div class="progress-bar bg-orange" data-width="32%"></div>
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <div class="text-small float-right font-weight-bold text-muted">190</div>
+                      <div class="font-weight-bold mb-1">Yahoo</div>
+                      <div class="progress" data-height="4" data-toggle="tooltip" title="22%">
+                        <div class="progress-bar bg-cyan" data-width="22%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row graph345" style="display:none" >
+              <div class="col-lg-6 col-md-12 col-12 col-sm-12">
+                <div class="card mt-sm-5 mt-md-0">
+                  <div class="card-header">
+                    <h4>Waste</h4>
+                  </div>
+                  <div class="card-body">
+                    <canvas id="myChart3"></canvas>                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-12 col-sm-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Consumption</h4>
+                  </div>
+                  <div class="card-body">                    
+                    <canvas id="line-chart3"></canvas>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+			
+			<!---Line --->
+			<div class="row">
+				<div class="col-12 col-sm-12 col-lg-12"> 		  
+			  
+				  <div class="col-12 col-sm-12 col-lg-6" style="display:none">
+					<div class="card">
+					  <div class="card-header">
+						<h4>Statistics</h4>
+						<div class="card-header-action">
+						  <a href="#" class="btn active">Week</a>
+						  <a href="#" class="btn">Month</a>
+						  <a href="#" class="btn">Year</a>
+						</div>
+					  </div>
+					  <div class="card-body">
+						<canvas id="myChart2" height="180"></canvas>
+						<div class="statistic-details mt-1">
+						  <div class="statistic-details-item">
+							<div class="text-small text-muted"><span class="text-primary"><i
+								  class="fas fa-caret-up"></i></span> 12%</div>
+							<div class="detail-value">$125</div>
+							<div class="detail-name">Today</div>
+						  </div>
+						  <div class="statistic-details-item">
+							<div class="text-small text-muted"><span class="text-danger"><i
+								  class="fas fa-caret-down"></i></span> 33%</div>
+							<div class="detail-value">$3,564</div>
+							<div class="detail-name">This Week</div>
+						  </div>
+						  <div class="statistic-details-item">
+							<div class="text-small text-muted"><span class="text-primary"><i
+								  class="fas fa-caret-up"></i></span>19%</div>
+							<div class="detail-value">$14,687</div>
+							<div class="detail-name">This Month</div>
+						  </div>
+						  <div class="statistic-details-item">
+							<div class="text-small text-muted"><span class="text-primary"><i
+								  class="fas fa-caret-up"></i></span>29%</div>
+							<div class="detail-value">$88,568</div>
+							<div class="detail-name">This Year</div>
+						  </div>
+						</div>
+					  </div>
+					</div>                
+				</div>
+				<!---Line --->
+				<div id="myHTMLWrapper"> 
+				</div> 
+            </div>
+			<!----End Line--->
+			
+          </div>
+        </section>
+      </div>
+      <footer class="main-footer">
+        <div class="footer-left">
+          <p style="color=#FFF; font-size:900">SmartGate</p>
+        </div>
+        <div class="footer-right">
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script type="text/javascript">
+		function typeFun(typedata) {   
+        if (typedata == 1)
+        {
+            $(".Spinning1 ").show();
+			$(".Spinning2 ").show();
+			$(".Spinning3 ").show();
+			$(".graph1 ").show();
+			$(".graph12 ").hide();
+			$(".graph34 ").hide();
+			
+            
+        } else if(typedata == 2){
+            $(".Spinning1 ").show();
+			$(".Spinning2 ").hide();
+			$(".Spinning3 ").hide();
+			$(".graph1 ").hide();
+			$(".graph12 ").show();
+			$(".graph34 ").show();			
+        }
+		else if(typedata == 3){
+            $(".Spinning1 ").hide();
+			$(".Spinning2 ").show();
+			$(".Spinning3 ").hide();
+			$(".graph1 ").hide();
+			$(".graph12 ").show();
+			$(".graph34 ").show();			
+        }
+		else if(typedata == 4){
+            $(".Spinning1 ").hide();
+			$(".Spinning2 ").hide();
+			$(".Spinning3 ").show();	
+			$(".graph1 ").hide();
+			$(".graph12 ").show();
+			$(".graph34 ").show();			
+        }
+    }
+	function typeData(typedata) {   
+        if (typedata == 1)
+        {
+            $(".Efficiency ").show();
+			$(".Production ").hide();
+			$(".Waste ").hide();	
+			$(".Consumption ").hide();
+            
+        } else if(typedata == 2){
+            $(".Efficiency ").hide();
+			$(".Production ").show();
+			$(".Waste ").hide();	
+			$(".Consumption ").hide();			
+        }
+		else if(typedata == 3){
+            $(".Efficiency ").hide();
+			$(".Production ").hide();
+			$(".Waste ").show();	
+			$(".Consumption ").hide();			
+        }
+		else if(typedata == 4){
+            $(".Efficiency ").hide();
+			$(".Production ").hide();
+			$(".Waste ").hide();	
+			$(".Consumption ").show();			
+        }
+    }
+	</script>
+  <script>
+	  var wrapper = document.getElementById("myHTMLWrapper");
+	  var myHTML = '';	  				
+	  for (var i = 0; i < 3; i++) {
+		var a=0;
+		var b=0;
+		var c=0;
+		myHTML +='<div class="card Spinning'+(i+1)+'">'
+		myHTML +='<label class="CheckData" style="padding-left: 26px;"><i class="fa fa-caret-right" style="padding: 3px;font-size: 17px;"></i>Spinning Line'+(i+1)+'   &nbsp; &nbsp; &nbsp;<i class="fa fa-caret-right" style="padding: 3px;font-size: 17px;"></i>Total : '+a+'    &nbsp; &nbsp; &nbsp;<i data-feather="arrow-up-circle" class="col-green"></i>&nbsp;Running : '+c+'   &nbsp; &nbsp; &nbsp;<i data-feather="arrow-down-circle" class="col-red"></i>&nbsp;Stop : '+b+'</label>'               
+        myHTML +='<div class="card-body">'
+        myHTML +='<div class="summary">'                      
+        myHTML +='<div class="summary-chart" >'
+		myHTML +='<div class="row">'	
+		for(var j = 0; j < 40; j++){
+			a=a+1;			
+			if(a<=40){
+				if(i==0){
+					if(a==3||a==7||a==9||a==1||a==39||a==25){
+						b=b+1;
+						myHTML += '<div style="margin-left: 4px;margin-bottom: 9px;"><table > <tr> <th> Pump'+a+'</th></tr><tr><td   style="background-color: #fff;color: #c20e15;font-weight: 700;">000.00 rpm</td></tr></table></div>';
+					}				
+					else{
+						c=c+1;
+						myHTML += '<div style="margin-left: 4px;margin-bottom: 9px;"><table > <tr> <th>Pump'+a+'</th></tr><tr><td style="background-color: #fff;color: #047c04;font-weight: 700;">100.34 rpm</td></tr></table></div>';
+					}
+				}
+				if(i==1){
+					if(a==3||a==2||a==9||a==19||a==37||a==25){
+					b=b+1;
+					myHTML += '<div style="margin-left: 4px;margin-bottom: 9px;"><table > <tr> <th>Pump'+a+'</th></tr><tr><td   style="background-color: #fff;color: #c20e15;font-weight: 700;">00.00 rpm</td></tr></table></div>';
+					}				
+					else{
+						c=c+1;
+						myHTML += '<div style="margin-left: 4px;margin-bottom: 9px;"><table > <tr> <th>Pump'+a+'</th></tr><tr><td style="background-color: #fff;color: #047c04;font-weight: 700;">00.00 rpm</td></tr></table></div>';
+					}
+				}
+				if(i==2){
+					if(a==13||a==7||a==19||a==1||a==40||a==15||a==20){
+					b=b+1;
+					myHTML += '<div style="margin-left: 4px;margin-bottom: 9px;"><table > <tr> <th>Pump'+a+'</th></tr><tr><td   style="background-color: #fff;color: #c20e15;font-weight: 700;">00.00 rpm</td></tr></table></div>';
+					}				
+					else{
+						c=c+1;
+						myHTML += '<div style="margin-left: 4px;margin-bottom: 9px;"><table > <tr> <th>Pump'+a+'</th></tr><tr><td style="background-color: #fff;color: #047c04;font-weight: 700;">00.00 rpm</td></tr></table></div>';
+					}
+				}
+				
+			}	
+					
+		}
+		myHTML +='</div>'
+		myHTML +='</div>'
+		myHTML +='</div>'
+		myHTML +='</div>'
+		myHTML +='</div>'		
+	  }
+		
+	  wrapper.innerHTML = myHTML
+  </script> 
+  <!-- General JS Scripts -->
+  <script src="assets/js/app.min.js"></script>
+  <!-- JS Libraies -->
+  <script src="assets/bundles/chartjs/chart.min.js"></script>
+  <script src="assets/bundles/jquery.sparkline.min.js"></script>
+  <script src="assets/bundles/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/bundles/jqvmap/dist/jquery.vmap.min.js"></script>
+  <script src="assets/bundles/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+  <script src="assets/bundles/jqvmap/dist/maps/jquery.vmap.indonesia.js"></script>
+  <!-- Page Specific JS File -->
+  <script src="assets/js/page/widget-chart.js"></script>
+  <!-- Template JS File -->
+    <script src="assets/bundles/apexcharts/apexcharts.min.js"></script>
+  <!-- Page Specific JS File -->
+  <script src="assets/js/page/chart-apexcharts.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <!-- Custom JS File -->
+  <script src="assets/js/custom.js"></script>
+  <style>
+  .theme-white .navbar {
+		background-color: #0d1f45;
+		box-shadow: 15px 9px 25px 0 rgb(0 0 0 / 10%);
+	}
+	.theme-white .navbar .nav-link .feather {
+		color: #f4f4f7;
+	}
+	.main-footer {
+		padding: 10px 30px 0px 280px;
+		margin-top: 40px;
+		color: #FFF;
+		border-top: 1px solid #e3eaef;
+		display: inline-block;
+		background: #0d1f45;
+		font-weight: 900;
+		text-transform: uppercase;
+		font-size: 11px;
+		width: 100%;
+	}
+	.main-sidebar .sidebar-brand a .header-logo {
+		height: 43px;
+	}
+	.badge {
+		vertical-align: middle;
+		padding: 7px 12px;
+		font-weight: 600;
+		letter-spacing: 0.3px;
+		border-radius: 6px;
+		font-size: 12px;
+	}
+	.l-bg-orange {
+		background: linear-gradient(135deg, #c75a39 0%, #fda23f 100%) !important;
+		color: #fff;
+	}
+	.l-bg-waste {
+		background: linear-gradient(135deg, #8b045a, #e98cc0) !important;
+		color: #fff;
+	}
+	.l-bg-Consumption  {
+		background: linear-gradient(135deg, #007e38, #30a1a1) !important;
+		color: #fff;
+	}
+	.l-bg-cyan {
+		background: linear-gradient(135deg, #0b61a3, #84c0ec) !important;
+		color: #fff;
+	}
+	.p-t-50 {
+		padding-top: 0px;
+	}
+	
+	.main-content {
+		padding-left: 262px;
+		padding-right: 30px;
+		padding-top: 83px;
+		width: 100%;
+		position: relative;
+	}
+	.CheckData{
+		font-size: medium;
+		font-weight: 900;
+		color: #0d1f45;	
+		text-shadow: 3px 2px 4px #d7baba;		
+	}
+	.card .card-body {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	table, td, th {
+	  text-align: left;
+	  text-align: center;
+	  border-radius: 1px;
+	  border: 1px solid #333;
+	}
+
+	table {
+		border-collapse: collapse;	
+		color:white;
+		
+	}
+
+	th, td {
+		padding: 1px 4px; 
+		  
+	}
+	
+	td {
+		background-color: #fff;
+		color: black;
+	}
+	.mt-5, .my-5 {
+		margin-top: 1rem !important;
+	}
+	body {
+		background-color: #ffffff;
+		font-size: 14px;
+		font-weight: 400;
+		font-family: "Nunito", "Segoe UI", arial;
+		color: #6c757d;
+	}
+	.main-sidebar .sidebar-menu li a {
+		position: relative;
+		display: flex;
+		align-items: center;
+		height: 50px;
+		padding: 0 20px;
+		width: 100%;
+		letter-spacing: 0.3px;
+		color: #1c1d1e;
+		font-weight: 800;
+		text-decoration: none;
+	}
+	th {
+	    font-weight: 600;
+		/* text-align: inherit; */
+		color: #333;
+		background: #F2f2f2;
+	}
+  </style>
+</body>
+
+
+<!-- widget-chart.html  21 Nov 2019 03:50:03 GMT -->
+</html>
