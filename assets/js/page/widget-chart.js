@@ -551,8 +551,8 @@ var options = {
       show: false
     }
   },
-  //colors: ["#36454F", "#2E8B57","#C68E17"],
-  colors: ["#C68E17", "#001852","#e01f54"],
+  colors: ["#36454F", "#2E8B57","#C68E17"],
+  //colors: ["#C68E17", "#001852","#e01f54"],
   dataLabels: {
     enabled: true
   },
@@ -563,16 +563,16 @@ var options = {
   },
   series: [{
     name: "Spinning Line1",
-    data: [60, 40, 14, 36, 32, 80,25,99]
+    data: [10,15,20,40,45,60,65,40,35,10]
 	
   },
   {
     name: "Spinning Line2",
-    data: [50, 11, 30, 18, 25, 13,40,50]
+    data: [16,17,17,19,20,27,40,50,60,70]
   },
   {
     name: "Spinning Line3",
-    data: [15, 70, 6, 90, 9, 5,14,20]
+    data: [30,40,20,50,60,40,20,10,20,100]
   }
   ],
   grid: {
@@ -586,7 +586,7 @@ var options = {
     size: 6
   },
   xaxis: {
-    categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun","July","AUG"],
+    categories: ["Day1", "Day2", "Day3", "Day4", "Day5", "Day6","Day7","Day8","Day9","Day10"],
 
     labels: {
       style: {

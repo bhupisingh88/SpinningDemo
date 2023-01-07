@@ -278,7 +278,7 @@ function chart4() {
     var options = {
         chart: {
             height: 350,
-            type: 'line',
+            type: 'bar',
             shadow: {
                 enabled: false,
                 color: '#bbb',
