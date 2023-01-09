@@ -537,7 +537,7 @@ var myChart = new Chart(ctx, {
 // revenue chart 
 var options = {
   chart: {
-    height: 230,
+    height: 250,
     type: "line",
     shadow: {
       enabled: true,
@@ -607,12 +607,12 @@ var options = {
     min: 0,
     max: 100
   },
-  legend: {
+  legend: {display: true,
     position: "top",
-    horizontalAlign: "right",
+    horizontalAlign: "center",
     floating: true,
-    offsetY: -25,
-    offsetX: -5
+    offsetY: -4,
+    offsetX: -0
   }
 };
 
