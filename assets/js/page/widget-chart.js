@@ -551,13 +551,14 @@ var options = {
       show: false
     }
   },
-  colors: ["#36454F", "#2E8B57","#C68E17"],
+   colors: ["#718C9E", "#3dd580","#F39C12"],  
+  //colors: ["#36454F", "#2E8B57","#C68E17"],
   //colors: ["#C68E17", "#001852","#e01f54"],
   dataLabels: {
     enabled: true
   },
   stroke: {
-    curve: "smooth",
+    //curve: "smooth",
 	width:3
        
   },
@@ -568,11 +569,11 @@ var options = {
   },
   {
     name: "Spinning Line2",
-    data: [16,17,17,19,20,27,40,50,60,70]
+    data: [16,83,80,83,83,60,83,83,83,83]
   },
   {
     name: "Spinning Line3",
-    data: [30,40,20,50,60,40,20,10,20,100]
+    data: [30,40,20,50,10,40,20,10,20,100]
   }
   ],
   grid: {

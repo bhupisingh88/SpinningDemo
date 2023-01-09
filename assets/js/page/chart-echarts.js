@@ -30,7 +30,7 @@ $(function (e) {
 
     var option = {
         grid: {
-            top: '6',
+            top: '1',
             right: '0',
             bottom: '17',
             left: '25',
@@ -80,7 +80,7 @@ $(function (e) {
             }
         },
         series: chartdata,
-        color: ['#154360 ', '#32cafe', '#fa626b',]
+        color: ['#9f78ff ', '#32cafe', '#fa626b',]
     };
 
     barChart.setOption(option);
@@ -135,7 +135,7 @@ $(function (e) {
                 data: [{
                     type: "max",
                     name: "???"
-                }, {
+                }, {									
                     type: "min",
                     name: "???"
                 }]
