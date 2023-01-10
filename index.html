@@ -624,7 +624,7 @@ color:rgb(253, 253, 253); opacity:1;
               </div>
             </div>
 			<!---Graph----->
-			<div class="graph12" id="graphdata">
+			<div class="graph12" id="graphdata" style="margin-top: 21px;">
 			<section class="section" >
           <div class="section-body">
             <div class="row clearfix">
@@ -787,7 +787,7 @@ color:rgb(253, 253, 253); opacity:1;
 				<div id="myHTMLWrapper"> 
 				</div>  --->
 			<div id="myBtn">
-				<div class="col-xl-12 col-lg-12 Spinning1" >
+				<div class="Spinning1" >
 				<div class="card card-green" id="myBtn">
 				
 				<div class="card-header">
@@ -846,7 +846,7 @@ color:rgb(253, 253, 253); opacity:1;
 				</div>
 				</div>
 				</div>
-				<div class="col-xl-12 col-lg-12 Spinning2">
+				<div class=" Spinning2">
 				<div class="card card-green" id="myBtn">
 				
 				<div class="card-header">
@@ -905,7 +905,7 @@ color:rgb(253, 253, 253); opacity:1;
 				</div>
 				</div>
 				</div>
-				<div class="col-xl-12 col-lg-12 Spinning3">
+				<div class=" Spinning3">
 				<div class="card card-green" id="myBtn">
 				
 				<div class="card-header">
@@ -1085,40 +1085,30 @@ color:rgb(253, 253, 253); opacity:1;
 	 $('#lblName').text('SP '+a);
 	}
 	function typeFun(typedata) {   
-        if (typedata == 1)
-        {
-            $(".Spinning1 ").show();
-			$(".Spinning2 ").show();
-			$(".Spinning3 ").show();
-			$(".graph1 ").show();
-			//$(".graph12 ").hide();
-			$(".graph34 ").hide();
-			
-            
-        } else if(typedata == 2){
-            $(".Spinning1 ").show();
-			$(".Spinning2 ").hide();
-			$(".Spinning3 ").hide();
-			//$(".graph1 ").hide();
-			$(".graph12 ").show();
-			$(".graph34 ").show();			
+    if (typedata == 1){
+      $(".graph1 ").show();
+      $(".Spinning1 ").show();
+      $(".Spinning2 ").show();
+      $(".Spinning3 ").show();            
+    } 
+    else if(typedata == 2){
+        $(".graph1 ").hide();
+        $(".Spinning1 ").show();
+        $(".Spinning2 ").hide();
+        $(".Spinning3 ").hide(); 
         }
 		else if(typedata == 3){
-            $(".Spinning1 ").hide();
-			$(".Spinning2 ").show();
-			$(".Spinning3 ").hide();
-			//$(".graph1 ").hide();
-			$(".graph12 ").show();
-			$(".graph34 ").show();			
-        }
+      $(".graph1 ").hide();	
+      $(".Spinning1 ").hide();
+        $(".Spinning2 ").show();
+        $(".Spinning3 ").hide();
+      }
 		else if(typedata == 4){
-            $(".Spinning1 ").hide();
-			$(".Spinning2 ").hide();
-			$(".Spinning3 ").show();	
-			//$(".graph1 ").hide();
-			$(".graph12 ").show();
-			$(".graph34 ").show();			
-        }
+      $(".graph1 ").hide();	
+      $(".Spinning1 ").hide();
+        $(".Spinning2 ").hide();
+        $(".Spinning3 ").show();
+      }
     }
 	function typeData(typedata) {   
         if (typedata == 1)
