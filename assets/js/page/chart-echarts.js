@@ -29,12 +29,12 @@ $(function (e) {
     var barChart = echarts.init(chart);
 
     var option = {
-        grid: {
-            top: '1',
-            right: '0',
-            bottom: '17',
+        /*grid: {
+            top: '40',
+            right: '30',
+            bottom: '22',
             left: '25',
-        },
+        },*/
         xAxis: {
             data: ['Day1', 'Day2', 'Day3', 'Day4', 'Day5', 'Day6', 'Day7','Day8','Day9','Day10'],
             axisLine: {
@@ -63,6 +63,13 @@ $(function (e) {
             }
 
         },
+        legend: {display: true,
+            position: "top",
+            horizontalAlign: "center",
+            floating: true,
+            offsetY: -4,
+            offsetX: -0
+          },
         yAxis: {
             splitLine: {
                 lineStyle: {
@@ -85,18 +92,7 @@ $(function (e) {
 
     barChart.setOption(option);
 
-
-   
-
-
-
-    /* Bar chart */
-
-     
-
-
-
-    /* Bar Graph */
+    /* Production Graph */
     var chart = document.getElementById('echart_graph_line');
     var barChart = echarts.init(chart);
 
@@ -152,8 +148,8 @@ $(function (e) {
     });
 
    
-    /* line chart */
-      /* line chart */
+ 
+      /* Consumption line chart */
     var chart = document.getElementById('echart_area_line');
     var lineChart = echarts.init(chart);
 
@@ -163,7 +159,7 @@ $(function (e) {
         },
         legend: {
             textStyle: { color: '#9aa0ac' },
-            data: ["Deal"]
+            data: ["Consumption"]
         },
         calculable: !0,
         xAxis: [{
@@ -183,7 +179,7 @@ $(function (e) {
             }
         }],
         series: [{
-            name: "Power",
+            name: "Consumption",
             type: "line",
             smooth: !0,
             itemStyle: {
@@ -197,7 +193,7 @@ $(function (e) {
         }],
         color: ['#32cafe',]
     });    
-       /* Power line chart */
+       /* Waste line chart */
     var chart = document.getElementById('echart_area_line_consumaption');
     var lineChart = echarts.init(chart);
 
@@ -207,7 +203,7 @@ $(function (e) {
         },
         legend: {
             textStyle: { color: '#9aa0ac' },
-            data: ["Pre-order"]
+            data: ["Power"]
         },
         calculable: !0,
         xAxis: [{

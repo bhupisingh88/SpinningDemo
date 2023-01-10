@@ -141,6 +141,7 @@
 color:rgb(253, 253, 253); opacity:1;
    }
 }
+
 </style>
 </head>
 
@@ -237,7 +238,7 @@ color:rgb(253, 253, 253); opacity:1;
                 <li><a class="nav-link" href="alert.html">View</a></li>                
               </ul>
             </li>
-			<li class="dropdown">
+			<li class="dropdown active">
               <a href="https://watchyourplant.com/User/Login.aspx" class="nav-link"><i data-feather="log-out"></i><span>Logout</span></a>
             </li>
             
@@ -378,7 +379,7 @@ color:rgb(253, 253, 253); opacity:1;
 					<div class="col-lg-9">
 						<div id="revenue"></div>
 					</div>
-					<div class="col-lg-3" style="border-left: 1px solid #d7d7d7;">
+					<div class="col-lg-3" style="outline: dashed #f3f0f0;margin-bottom: 20px;">
                       <div class="row mt-5">  
 						<div class="col-12 col-xl-12 mb-12 Efficiency"><h5>Total Efficiency:</h5></div>
 						<div class="col-12 col-xl-12 mb-12 Production" style="display:none"><h5>Total Production:</h5></div>
@@ -631,7 +632,7 @@ color:rgb(253, 253, 253); opacity:1;
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-6">
                 <div class="card">
                   <div class="card-header">
-                    <h4>Efficiency (%) </h4>
+                    <h4><i class="fa fa-chart-line" ></i> &nbsp; Efficiency (%) </h4>
                   </div>
                   <div class="card-body">
                     <div id="echart_bar_line" class="chartsh chart-shadow"></div>
@@ -641,7 +642,7 @@ color:rgb(253, 253, 253); opacity:1;
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-6">
                 <div class="card">
                   <div class="card-header">
-                    <h4>Production (Tons/Day) </h4>
+                    <h4><i class="fa fa-chart-bar" ></i> &nbsp; Production (Tons/Day) </h4>
                   </div>
                   <div class="card-body">
                     <div id="echart_graph_line" class="chartsh chart-shadow"></div>
@@ -653,7 +654,7 @@ color:rgb(253, 253, 253); opacity:1;
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-6">
                 <div class="card">
                   <div class="card-header">
-                    <h4>Waste(Tons/Day)</h4>
+                    <h4><i class="fa fa-chart-area" ></i> &nbsp;Waste(Tons/Day)</h4>
                   </div>
                   <div class="card-body">
                     <div id="echart_area_line_consumaption" class="chartsh chart-shadow"></div>
@@ -662,10 +663,11 @@ color:rgb(253, 253, 253); opacity:1;
               </div>
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-6" >
                 <div class="card">
-                  <div class="card-header">
-				  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-4"><h4>Consumption </h4> </div>
+                  <div class="card-header" style="padding: 10px 14px;">
+				  <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 col-5">
+            <h4><i class="fa fa-chart-area" ></i> &nbsp;Consumption </h4> </div>
                     
-					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-8" style="text-align-last: end;"> <label class="btn btn-outline-info" style=" padding:2px 7px;">Power(KWH)  </label>  &nbsp; &nbsp;<label class="btn btn-outline-info" style=" padding:2px 7px;">Spin Finish Oil(M3) </a></label></div>
+					<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 col-7" style="text-align-last: end;"> <label class="btn btn-outline-info" style=" padding:2px 7px;">Power(KWH)  </label>   <label class="btn btn-outline-info" style=" padding:2px 7px;">Spin Finish Oil(M3) </a></label></div>
 					
 					
                   </div>
@@ -852,7 +854,7 @@ color:rgb(253, 253, 253); opacity:1;
 				<div class="card-header">
 				<h4 style="font-size: 16px;color: #606060;"><i class="fa fa-caret-right" style="padding-right: 5px;"></i>Spinning Line2</h4>
 				<div class="card-header-action">
-				<i data-feather="arrow-up-circle" class="col-green"></i>&nbsp;Running : 35   &nbsp; &nbsp; &nbsp;<i data-feather="arrow-down-circle" class="col-red"></i>&nbsp;Stop : 05 
+				<i data-feather="arrow-up-circle" class="col-green"></i>&nbsp;Running : 34   &nbsp; &nbsp; &nbsp;<i data-feather="arrow-down-circle" class="col-red"></i>&nbsp;Stop : 06 
 				</div>
 				</div>
 				<div class="card-body card-type-3">
@@ -911,7 +913,7 @@ color:rgb(253, 253, 253); opacity:1;
 				<div class="card-header">
 				<h4 style="font-size: 16px;color: #606060;"><i class="fa fa-caret-right" style="padding-right: 5px;"></i>Spinning Line3</h4>
 				<div class="card-header-action">
-				<i data-feather="arrow-up-circle" class="col-green"></i>&nbsp;Running : 35   &nbsp; &nbsp; &nbsp;<i data-feather="arrow-down-circle" class="col-red"></i>&nbsp;Stop : 05 
+				<i data-feather="arrow-up-circle" class="col-green"></i>&nbsp;Running : 31   &nbsp; &nbsp; &nbsp;<i data-feather="arrow-down-circle" class="col-red"></i>&nbsp;Stop : 09
 				</div>
 				</div>
 				<div class="card-body card-type-3">
@@ -1379,6 +1381,10 @@ color:rgb(253, 253, 253); opacity:1;
 .cardsize {
     background-color: transparent;
     padding: 7px 12px !important;
+}
+.light-sidebar .main-sidebar .sidebar-menu li ul.dropdown-menu li a:hover {
+    color: #fbfbfb;
+    background: #0d1f45;
 }
   </style>
 </body>
