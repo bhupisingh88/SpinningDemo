@@ -135,6 +135,7 @@
    }
    90% {
    color:rgb(82, 245, 82);
+   
    }
    100% {
 color:rgb(253, 253, 253); opacity:1;
@@ -267,7 +268,7 @@ color:rgb(253, 253, 253); opacity:1;
 			<div class="row">	<!--cards-->			
 				<div class="col-xl-3 col-md-12 col-lg-3" onclick="typeData(1);" style="cursor: pointer;">
 					<div class="card l-bg-orange" style="text-shadow: 0px 1px 2px #2e2c2c;">
-					  <div class="card-body">
+					  <div class="card-body cardsize">
 						<div class="text-white">
 						<h4 class="mb-0 font-23" >Efficiency </h4>
 						  <div class="row">
@@ -290,16 +291,16 @@ color:rgb(253, 253, 253); opacity:1;
 				</div>
 				<div class="col-xl-3 col-md-12 col-lg-3" onclick="typeData(2);" style="cursor: pointer;">
 					<div class="card l-bg-cyan" style="text-shadow: 0px 1px 2px #2e2c2c;">
-					  <div class="card-body">
+					  <div class="card-body cardsize">
 						<div class="text-white">
 						<h4 class="mb-0 font-23" >Production </h4>
 						  <div class="row">
 							<div class="col-md-6 col-lg-6">								  
 							  <p class="mb-2"></p>
 							  <p class="mb-0" style="color: #ffffff;">
-								<span class="font-16">+85.11 Tons</span> 
+								<span class="font-16">+85.11 Tons</span> <br><br>
                 <span class="gradeA">
-                  <br> [20 Tons]
+                   [20 Tons]
                 </span>
 							  </p>
 							</div>
@@ -313,7 +314,7 @@ color:rgb(253, 253, 253); opacity:1;
 				</div>
 				<div class="col-xl-3 col-md-12 col-lg-3" onclick="typeData(3);" style="cursor: pointer;">
 					<div class="card l-bg-waste">
-					  <div class="card-body">
+					  <div class="card-body cardsize">
 						<div class="text-white">
 						<h4 class="mb-0 font-23" style="text-shadow: 0px 1px 2px #080808;">Waste </h4>
 						  <div class="row">
@@ -322,7 +323,7 @@ color:rgb(253, 253, 253); opacity:1;
 							  <p class="mb-0" style="color: #ffffff;">
 								<span class="font-16">+08.11 Tons</span> 
                 <span class="gradeA">
-               <br>[75 Tons]
+                  <br><br>[75 Tons]
                 </span>
 							  </p>
 							</div>
@@ -336,7 +337,7 @@ color:rgb(253, 253, 253); opacity:1;
 				</div>
 				<div class="col-xl-3 col-md-12 col-lg-3" onclick="typeData(4);" style="cursor: pointer;">
 					<div class="card l-bg-Consumption" style="text-shadow: 0px 1px 2px #2e2c2c;">
-					  <div class="card-body">
+					  <div class="card-body cardsize">
 						<div class="text-white">
 						<h4 class="mb-0 font-23" >Consumption </h4>
 						  <div class="row">							  
@@ -1012,7 +1013,7 @@ color:rgb(253, 253, 253); opacity:1;
       </div>  
       <footer class="main-footer">
         <div class="footer-left">
-          <p style="color=#FFF; font-size:900">Copyright © 2019 Smart Controls India Limited. All Rights Reserved.</p>
+          <p style="color:#FFF; font-size:900">Copyright © 2019 Smart Controls India Limited. All Rights Reserved.</p>
         </div>
         <div class="footer-right">
         </div>
@@ -1384,6 +1385,10 @@ color:rgb(253, 253, 253); opacity:1;
     margin-bottom: 1rem;
     border: 0;
     border-top: 1px solid rgba(0,0,0,.1);
+}
+.cardsize {
+    background-color: transparent;
+    padding: 7px 12px !important;
 }
   </style>
 </body>
