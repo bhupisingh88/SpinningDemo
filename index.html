@@ -249,21 +249,29 @@ color:rgb(253, 253, 253); opacity:1;
       <div class="main-content">
         <section class="section">
           <div class="section-body">
-			<div class="row">		
+			<div class="row" style="margin-bottom: -13px;">		
 				<div class="col-5 col-sm-5 col-lg-5" >	
           <div class="form-group">            
-            <select style="margin: 12px;padding: 4px;width: auto;" class="form-control">
+            <select style="margin: 4px;padding: 1px;width: auto;cursor: pointer;border-color: #0d1f45;font-size: 12px;font-weight: 900;" class="form-control">
               <option>LAST 10 DAYS</option>
               <option>YTD</option>
               <option>MTD</option> 
             </select>
           </div>
         </div>		
-				<div class="col-7 col-sm-7 col-lg-7" style="text-align: right;">
-					<input type="radio" name="colors" id="All" checked style="margin: 12px;padding: 4px;"  value="All" onclick="typeFun(1);"><label for="All" class="CheckData">All</label>
-					<input type="radio" name="colors" id="Spinning1" style="margin: 12px;padding: 4px;" value="Spinning1" onclick="typeFun(2);"> <label for="Spinning1" class="CheckData">Spinning Line1</label> 
-					<input type="radio" name="colors" id="Spinning2" style="margin: 12px;padding: 4px;" value="Spinning2" onclick="typeFun(3);"><label for="Spinning2" class="CheckData">Spinning Line2</label>
-					<input type="radio" name="colors" id="Spinning3" style="margin: 12px;padding: 4px;" value="Spinning3" onclick="typeFun(4);"><label for="Spinning3" class="CheckData">Spinning Line3</label>
+				<div class="col-7 col-sm-7 col-lg-7" style="text-align: right;margin-top: 4px;">
+          <!-- <div class="btn-group mb-3" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-info">All</button>
+            <button type="button" class="btn btn-warning" style="background-color:#718C9E">Spinning Line1</button>
+            <button type="button" class="btn btn-success"style="background-color:#718C9E">Spinning Line2</button>
+            <button type="button" class="btn btn-success"style="background-color:#718C9E">Spinning Line3</button>
+          </div> -->
+
+
+					<input type="radio" name="colors" id="All" checked style="margin: 6px;padding: 4px;"  value="All" onclick="typeFun(1);"><label for="All" class="CheckData">All</label>
+					<input type="radio" name="colors" id="Spinning1" style="margin: 6px;padding: 4px;" value="Spinning1" onclick="typeFun(2);"> <label for="Spinning1" class="CheckData">Spinning Line1</label> 
+					<input type="radio" name="colors" id="Spinning2" style="margin: 6px;padding: 4px;" value="Spinning2" onclick="typeFun(3);"><label for="Spinning2" class="CheckData">Spinning Line2</label>
+					<input type="radio" name="colors" id="Spinning3" style="margin: 6px;padding: 4px;" value="Spinning3" onclick="typeFun(4);"><label for="Spinning3" class="CheckData">Spinning Line3</label>
 				</div>
 			</div>
 			<div class="row">	<!--cards-->			
@@ -992,10 +1000,8 @@ color:rgb(253, 253, 253); opacity:1;
 										<td>200.91rpm</td>
 										<td>02</td>
 										<td>01 Hours</td>
-										<td>23 Hours</td>
-										
-									  </tr>
-													  
+										<td>23 Hours</td>										
+									  </tr>													  
 									</tbody>
 								  </table>
 								</div>
