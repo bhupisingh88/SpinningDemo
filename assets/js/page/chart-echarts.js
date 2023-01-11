@@ -203,7 +203,7 @@ $(function (e) {
         },
         legend: {
             textStyle: { color: '#9aa0ac' },
-            data: ["Power"]
+            data: ["Waste"]
         },
         calculable: !0,
         xAxis: [{
@@ -223,7 +223,7 @@ $(function (e) {
             }
         }],
         series: [{
-            name: "Power",
+            name: "Waste",
             type: "line",
             smooth: !0,
             itemStyle: {
