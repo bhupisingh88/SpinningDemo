@@ -115,8 +115,8 @@
 .modal-body {padding: 2px 16px;}
 .gradeA {
    
-   animation: 2s gradeA infinite;
-   font-size: 16px;
+   animation: 3s gradeA infinite;
+   font-size: 14px;
    font-weight: bold;
 }
 
@@ -130,7 +130,7 @@
        /*opacity: .1;color:rgb(240, 248, 130);*/
    }
    50% {
-       color: springgreen;
+       color: rgb(255, 249, 249);
        /*opacity: 1;*/
    }
    90% {
@@ -138,7 +138,7 @@
    
    }
    100% {
-color:rgb(253, 253, 253); opacity:1;
+color:springgreen; opacity:1;
    }
 }
 
@@ -196,25 +196,27 @@ color:rgb(253, 253, 253); opacity:1;
             <li class="dropdown active">
               <a href="index.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
             </li>           
-                       
+            <li class="dropdown">
+              <a href="" class="nav-link"><i data-feather="sliders"></i><span>Trends</span></a>
+            </li>          
             <li class="menu-header">Setting </li>
             <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="copy"></i><span>Master Data</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="StoppageReasonMaster.html">Stoppage Reasons</a></li>   
-				<li><a class="nav-link" href="KfactorMaster.html">K-Factor</a></li> 
-				<li><a class="nav-link" href="SpinPackMaster.html">Spin Master</a></li> 
-				<li><a class="nav-link" href="PumpMaster.html">Pump Master</a></li>
-				<li><a class="nav-link" href="CanMaster.html">Can Master</a></li>				
+                <li><a class="nav-link" href="KfactorMaster.html">K-Factor</a></li> 
+                <li><a class="nav-link" href="SpinPackMaster.html">Spin Master</a></li> 
+                <li><a class="nav-link" href="PumpMaster.html">Pump Master</a></li>
+                <li><a class="nav-link" href="CanMaster.html">Can Master</a></li>				
               </ul>
             </li>
 			<li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="copy"></i><span>Feeding Data</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="FeedPowerData.html">Power Consumption</a></li>   
-				<li><a class="nav-link" href="Can Feeding Data.html">Can Tracking</a></li> 
-				<li><a class="nav-link" href="Stoppage Feeding Data.html">Stoppage Reasons</a></li> 
-				<li><a class="nav-link" href="FeedSpinPackData.html">Spin Pack</a></li>				
+                <li><a class="nav-link" href="Can Feeding Data.html">Can Tracking</a></li> 
+                <li><a class="nav-link" href="Stoppage Feeding Data.html">Stoppage Reasons</a></li> 
+                <li><a class="nav-link" href="FeedSpinPackData.html">Spin Pack</a></li>				
               </ul>
             </li>
 			<li class="dropdown">
@@ -286,7 +288,7 @@ color:rgb(253, 253, 253); opacity:1;
 							  <p class="mb-0" style="color: #ffffff;">
 								<span class="font-16">+86.25 % </span>
                 <span class="gradeA">
-                  <br><br>[97.54%]
+                  <br><br>[97.54 %/Day]
                 </span>
 							  </p>
 							</div>
@@ -309,7 +311,7 @@ color:rgb(253, 253, 253); opacity:1;
 							  <p class="mb-0" style="color: #ffffff;">
 								<span class="font-16">+85.11 Tons</span> <br><br>
                 <span class="gradeA">
-                   [20 Tons]
+                   [20 Tons/Day]
                 </span>
 							  </p>
 							</div>
@@ -332,7 +334,7 @@ color:rgb(253, 253, 253); opacity:1;
 							  <p class="mb-0" style="color: #ffffff;">
 								<span class="font-16">+08.11 Tons</span> 
                 <span class="gradeA">
-                  <br><br>[75 Tons]
+                  <br><br>[75 Tons/Day]
                 </span>
 							  </p>
 							</div>
@@ -389,35 +391,35 @@ color:rgb(253, 253, 253); opacity:1;
 					</div>
 					<div class="col-lg-3" style="outline: dashed #f3f0f0;margin-bottom: 20px;">
                       <div class="row mt-5">  
-						<div class="col-12 col-xl-12 mb-12 Efficiency"><h5>Total Efficiency:</h5></div>
-						<div class="col-12 col-xl-12 mb-12 Production" style="display:none"><h5>Total Production:</h5></div>
-						<div class="col-12 col-xl-12 mb-12 Waste" style="display:none"><h5>Total Waste :</h5></div>
-						<div class="col-12 col-xl-12 mb-12 Consumption" style="display:none"><h5>Total Consumption:</h5></div>
+                      <div class="col-12 col-xl-12 mb-12 Efficiency"><h5>Total Efficiency:</h5></div>
+                      <div class="col-12 col-xl-12 mb-12 Production" style="display:none"><h5>Total Production:</h5></div>
+                      <div class="col-12 col-xl-12 mb-12 Waste" style="display:none"><h5>Total Waste :</h5></div>
+                      <div class="col-12 col-xl-12 mb-12 Consumption" style="display:none"><h5>Total Consumption:</h5></div>
 						
                         
-                        <div class="col-7 col-xl-7 mb-3 Efficiency" style="color:#718C9E"> Spinning Line1</div>
-						<div class="col-7 col-xl-7 mb-3 Production" style="display:none" style="color:#718C9E"> Spinning Line1</div>
-						<div class="col-7 col-xl-7 mb-3 Waste" style="display:none" style="color:#718C9E"> Spinning Line1</div>
-						<div class="col-7 col-xl-7 mb-3 Consumption " style="display:none" style="color:#718C9E"> Spinning Line1</div>
+                        <div class="col-7 col-xl-7 mb-3 Efficiency" > Spinning Line1</div>
+                        <div class="col-7 col-xl-7 mb-3 Production" style="display:none" > Spinning Line1</div>
+                        <div class="col-7 col-xl-7 mb-3 Waste" style="display:none" > Spinning Line1</div>
+                        <div class="col-7 col-xl-7 mb-3 Consumption " style="display:none" > Spinning Line1</div>
                         <div class="col-5 col-xl-5 mb-3">
                           <span class="text-big">9,800</span>
-                          <sup class="text-danger">-15.5%</sup>
+                          <!-- <sup class="text-danger">-15.5%</sup> -->
                         </div>
-                        <div class="col-7 col-xl-7 mb-3 Efficiency" style="color:#3dd580"> Spinning Line2</div>
-						<div class="col-7 col-xl-7 mb-3 Production" style="display:none" style="color:#3dd580"> Spinning Line2</div>
-						<div class="col-7 col-xl-7 mb-3 Waste" style="display:none" style="color:#3dd580"> Spinning Line2</div>
-						<div class="col-7 col-xl-7 mb-3 Consumption" style="display:none" style="color:#3dd580"> Spinning Line2</div>
+                        <div class="col-7 col-xl-7 mb-3 Efficiency" > Spinning Line2</div>
+                        <div class="col-7 col-xl-7 mb-3 Production" style="display:none" > Spinning Line2</div>
+                        <div class="col-7 col-xl-7 mb-3 Waste" style="display:none" > Spinning Line2</div>
+                        <div class="col-7 col-xl-7 mb-3 Consumption" style="display:none" > Spinning Line2</div>
                         <div class="col-5 col-xl-5 mb-3">
                           <span class="text-big">1,00,98</span>
-                          <sup class="col-green">+25%</sup>
+                          <!-- <sup class="col-green">+25%</sup> -->
                         </div>
-                        <div class="col-7 col-xl-7 mb-3 Efficiency" style="color:#F39C12"> Spinning Line3</div>
-						<div class="col-7 col-xl-7 mb-3 Production" style="display:none" style="color:#F39C12"> Spinning Line2</div>
-						<div class="col-7 col-xl-7 mb-3 Waste" style="display:none" style="color:#F39C12"> Spinning Line2</div>
-						<div class="col-7 col-xl-7 mb-3 Consumption" style="display:none" style="color:#F39C12"> Spinning Line2</div>
+                        <div class="col-7 col-xl-7 mb-3 Efficiency"> Spinning Line3</div>
+                        <div class="col-7 col-xl-7 mb-3 Production" style="display:none"> Spinning Line2</div>
+                        <div class="col-7 col-xl-7 mb-3 Waste" style="display:none"> Spinning Line2</div>
+                        <div class="col-7 col-xl-7 mb-3 Consumption" style="display:none"> Spinning Line2</div>
                         <div class="col-5 col-xl-5 mb-3">
                           <span class="text-big">12,00</span>
-                          <sup class="col-green">+05%</sup>
+                          <!-- <sup class="col-green">+05%</sup> -->
                         </div>                        
                       </div>
                     </div> </div>                  
@@ -993,14 +995,16 @@ color:rgb(253, 253, 253); opacity:1;
 										<th>Speed</th>
 										<th>Stoppage Count</th>
 										<th>Down Time</th>
-										<th>Drip Counter</th>                            
+										<th>Drip Counter</th> 
+                    <th>Current</th>                           
 									  </tr>                        
 									<tbody>
 									  <tr>
 										<td>200.91rpm</td>
 										<td>02</td>
 										<td>01 Hours</td>
-										<td>23 Hours</td>										
+										<td>23 Hours</td>		
+                    <td>1000 Amp</td>								
 									  </tr>													  
 									</tbody>
 								  </table>
