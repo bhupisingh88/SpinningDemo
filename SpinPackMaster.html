@@ -141,12 +141,33 @@
             </li>
           </ul>
         </div>
-        <ul class="navbar-nav navbar-right">   
+        <ul class="navbar-nav navbar-right">  
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
+            class="nav-link notification-toggle nav-link-lg"><i data-feather="bell" class="bell"></i>
+          </a>
+          <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+            <div class="dropdown-header">
+              Notifications              
+            </div>
+            <div class="dropdown-list-content dropdown-list-icons">
+              <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-success text-white"> <i
+                    class="fas fa-user"></i>
+                </span> <span class="dropdown-item-desc"> <b>All Recipe Parameters are not running </b> <span class="time">12
+                    Hours
+                    Ago</span>
+                </span>
+              </a> 
+            </div>
+            <div class="dropdown-footer text-center">
+              <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </li> 
           <li class="dropdown"><a href="#" data-toggle="dropdown"
-              class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="assets/img/user.png"
-                class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
+              class="nav-link dropdown-toggle nav-link-lg nav-link-user">  <i
+              class="fas fa-user"></i> <span class="d-sm-none d-lg-inline-block"></span></a>
             <div class="dropdown-menu dropdown-menu-right pullDown">
-              <div class="dropdown-title">Hello Pankaj</div>
+              <div class="dropdown-title" style="font-size: 12px;">Hello Pankaj</div>
               <a href="profile.html" class="dropdown-item has-icon"> <i class="far
 										fa-user"></i> Profile
               </a> 
@@ -169,25 +190,28 @@
             <li class="menu-header">Main</li>
             <li class="dropdown active">
               <a href="index.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
-            </li>       
+            </li>           
+            <li class="dropdown">
+              <a href="Trends.html" class="nav-link"><i data-feather="sliders"></i><span>Trends</span></a>
+            </li>          
             <li class="menu-header">Setting </li>
-             <li class="dropdown">
+            <li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="copy"></i><span>Master Data</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="StoppageReasonMaster.html">Stoppage Reasons</a></li>   
-				<li><a class="nav-link" href="KfactorMaster.html">K-Factor</a></li> 
-				<li><a class="nav-link" href="SpinPackMaster.html">Spin Master</a></li> 
-				<li><a class="nav-link" href="PumpMaster.html">Pump Master</a></li>
-				<li><a class="nav-link" href="CanMaster.html">Can Master</a></li>				
+                <li><a class="nav-link" href="KfactorMaster.html">K-Factor</a></li> 
+                <li><a class="nav-link" href="SpinPackMaster.html">Spin Master</a></li> 
+                <li><a class="nav-link" href="PumpMaster.html">Pump Master</a></li>
+                <li><a class="nav-link" href="CanMaster.html">Can Master</a></li>				
               </ul>
             </li>
 			<li class="dropdown">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="copy"></i><span>Feeding Data</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="FeedPowerData.html">Power Consumption</a></li>   
-				<li><a class="nav-link" href="Can Feeding Data.html">Can Tracking</a></li> 
-				<li><a class="nav-link" href="Stoppage Feeding Data.html">Stoppage Reasons</a></li> 
-				<li><a class="nav-link" href="FeedSpinPackData.html">Spin Pack</a></li>				
+                <li><a class="nav-link" href="Can Feeding Data.html">Can Tracking</a></li> 
+                <li><a class="nav-link" href="Stoppage Feeding Data.html">Stoppage Reasons</a></li> 
+                <li><a class="nav-link" href="FeedSpinPackData.html">Spin Pack</a></li>				
               </ul>
             </li>
 			<li class="dropdown">
@@ -211,7 +235,7 @@
                 <li><a class="nav-link" href="alert.html">View</a></li>                
               </ul>
             </li>
-			<li class="dropdown">
+			<li class="dropdown active">
               <a href="https://watchyourplant.com/User/Login.aspx" class="nav-link"><i data-feather="log-out"></i><span>Logout</span></a>
             </li>
             
@@ -264,7 +288,7 @@
                         <th></th>
                       </tr>
                       <tr>
-                        <td><div class="badge badge-success">SPIN-1-001</div></td>
+                        <td><div class="badge badge-success"><a href="" style="color: #fff;">SPIN-1-001</a></div></td>
                         <td>04/01/2022 </td>
                         <td>
                           <a style="color:Red;"><i class="fa fa-times"></i> 
@@ -272,7 +296,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td><div class="badge badge-success">SPIN-1-002</div></td>
+                        <td><div class="badge badge-success"><a href="" style="color: #fff;">SPIN-1-002</a></div></td>
                         <td>04/01/2022 </td>
                         <td>
                           <a style="color:Red;"><i class="fa fa-times"></i> 
@@ -280,7 +304,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td><div class="badge badge-danger" style="background:rgb(132, 132, 132);">SPIN-1-003</div></td>
+                        <td><div class="badge badge-danger" style="background:rgb(132, 132, 132);"><a href="" style="color: #fff;">SPIN-1-003</a></div></td>
                         <td>04/01/2022 </td>
                         <td>
                           <a style="color:Red;"><i class="fa fa-times"></i> 
@@ -288,7 +312,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td><div class="badge badge-danger" style="background:rgb(132, 132, 132);">SPIN-1-004</div></td>
+                        <td><div class="badge badge-danger" style="background:rgb(132, 132, 132);"><a href="" style="color: #fff;">SPIN-1-004</a></div></td>
                         <td>04/01/2022 </td>
                         <td>
                           <a style="color:Red;"><i class="fa fa-times"></i> 
@@ -296,7 +320,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td><div class="badge badge-danger" style="background:rgb(132, 132, 132);">SPIN-1-005</div></td>
+                        <td><div class="badge badge-danger" style="background:rgb(132, 132, 132);"><a href="" style="color: #fff;">SPIN-1-005</a></div></td>
                         <td>04/01/2022 </td>
                         <td>
                           <a style="color:Red;"><i class="fa fa-times"></i> 
@@ -304,7 +328,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td><div class="badge badge-success">SPIN-1-006</div></td>
+                        <td><div class="badge badge-success"><a href="" style="color: #fff;">SPIN-1-006</a></div></td>
                         <td>04/01/2022 </td>
                         <td>
                           <a style="color:Red;"><i class="fa fa-times"></i> 
@@ -312,7 +336,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td><div class="badge badge-danger" style="background:rgb(132, 132, 132);">SPIN-1-007</div></td>
+                        <td><div class="badge badge-danger" style="background:rgb(132, 132, 132);"><a href="" style="color: #fff;">SPIN-1-007</a></div></td>
                         <td>04/01/2022 </td>
                         <td>
                           <a style="color:Red;"><i class="fa fa-times"></i> 
@@ -320,7 +344,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td><div class="badge badge-danger" style="background:rgb(132, 132, 132);">SPIN-1-008</div></td>
+                        <td><div class="badge badge-danger" style="background:rgb(132, 132, 132);"><a href="" style="color: #fff;">SPIN-1-008</a></div></td>
                         <td>04/01/2022 </td>
                         <td>
                           <a style="color:Red;"><i class="fa fa-times"></i> 

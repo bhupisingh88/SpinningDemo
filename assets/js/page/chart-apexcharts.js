@@ -215,8 +215,8 @@ function chart3() {
             curve: 'smooth'
         },
         series: [{
-            name: "Production",
-            data: [6, 10, 33, 26, 32, 32, 33]
+            name: "Value",
+            data: [6, 10, 33, 26, 32, 32, 33,22,39,7]
         },
         
         ],
@@ -236,9 +236,9 @@ function chart3() {
             size: 6
         },
         xaxis: {
-            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+            categories: ['Day1', 'Day2', 'Day3', 'Day4', 'Day5', 'Day6', 'Day7', 'Day8', 'Day9', 'Day10'],
             title: {
-                text: 'Month'
+                text: 'Days'
             },
             labels: {
                 style: {
@@ -248,7 +248,7 @@ function chart3() {
         },
         yaxis: {
             title: {
-                text: 'Production'
+                text: 'Value'
             },
             labels: {
                 style: {
@@ -256,7 +256,7 @@ function chart3() {
                 }
             },
             min: 5,
-            max: 40
+            max: 45
         },
         legend: {
             position: 'top',
