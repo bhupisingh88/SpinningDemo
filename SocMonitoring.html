@@ -56,8 +56,8 @@
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 15%; /* Location of the box */
+  z-index: 999; /* Sit on top */
+  padding-top: 7%; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -74,7 +74,7 @@
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 40%;
+  width: 60%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -312,12 +312,12 @@
                                         <td>
                                             ±
                                         </td>
-                                        <td> <span class="btn btn-md btn-success">217</span></td>
+                                        <td> <span class="btn btn-md btn-outline-success btn-block">217</span></td>
                                          
                                     </tr>
                                     <tr>
                                         <td>
-                                             <span>1</span>
+                                              
                                         </td>
                                         <td>
                                              
@@ -328,12 +328,12 @@
                                         <td>
                                             ±
                                         </td>
-                                        <td> <span class="btn btn-md btn-success">150</span></td>
+                                        <td> <span class="btn btn-md btn-outline-success btn-block">150</span></td>
                                         
                                     </tr>
                                     <tr>
                                         <td>
-                                             <span>1</span>
+                                              
                                         </td>
                                         <td>
                                              
@@ -344,7 +344,7 @@
                                         <td>
                                             ±
                                         </td> 
-                                         <td> <span class="btn btn-md btn-success">02</span></td>
+                                         <td> <span class="btn btn-md btn-outline-success btn-block">02</span></td>
                                     </tr>
                                     <tr>
                                         <td>
@@ -359,9 +359,25 @@
                                         <td>
                                             ±0.02
                                         </td>
-                                        <td> <span class="btn btn-md btn-success">0.78</span></td>
+                                        <td> <span class="btn btn-md btn-outline-success btn-block">0.78</span></td>
                                          
                                     </tr>
+                                    <tr>
+                                      <td>
+                                           <span></span>
+                                      </td>
+                                      <td>
+                                           
+                                      </td>
+                                      <td>SXG PRESSURE  </td>
+                                      <td>BAR</td>
+                                      <td>5,0</td>
+                                      <td>
+                                          ±0.02
+                                      </td>
+                                      <td> <span class="btn btn-md btn-success btn-block" id="myBtn">View Data</span></td>
+                                       
+                                  </tr>
                                     <tr>
                                         <td>
                                              <span></span>
@@ -375,7 +391,7 @@
                                         <td>
                                             ±0.02
                                         </td>
-                                        <td> <span class="btn btn-md btn-success">5</span></td>
+                                        <td> <span class="btn btn-md btn-outline-success btn-block">5</span></td>
                                          
                                     </tr>
                                     <tr>
@@ -391,7 +407,7 @@
                                         <td>
                                             ±0.03
                                         </td>
-                                       <td> <span class="btn btn-md btn-success">1.2</span></td>
+                                       <td> <span class="btn btn-md btn-outline-success btn-block">1.2</span></td>
                                          
                                     </tr>
                                     <tr>
@@ -407,7 +423,7 @@
                                         <td>
                                             
                                         </td>
-                                        <td> <span class="btn btn-md btn-success">11</span></td>
+                                        <td> <span class="btn btn-md btn-outline-success btn-block">11</span></td>
                                       
                                     </tr>
 
@@ -424,6 +440,71 @@
             </div>
           </div>
         </section>
+        
+					<!-- Vertically Center -->
+					<div id="myModal" class="modal">					  
+					  <div class="modal-content">
+						<div class="modal-header"><label> 
+              <i class="fas fa-braille"></i>&nbsp; Spinning Line > Pump > SXG PRESSURE (Real Time Data in BAR)</label>
+              
+						  <span class="close">&times;</span>						  
+						</div>
+							<div class="row">
+						  <div class="col-12">
+							<div class="">   
+								<div class="">
+                  <div class="row">				
+                    <div class="col-md-12">
+                    <div class="card-circle l-bg-red text-white">SP01 <span class="pump-text">--</span></div>
+                    <div class="card-circle l-bg-red text-white">SP02<span class="pump-text">5</span></div>
+                    <div class="card-circle l-bg-green text-white">SP03<span class="pump-text">6</span></div>
+                    <div class="card-circle l-bg-green text-white">SP04<span class="pump-text">8</span></div>
+                    <div class="card-circle l-bg-green text-white">SP05<span class="pump-text">10</span></div>
+                    <div class="card-circle l-bg-green text-white">SP06<span class="pump-text">2</span></div>
+                    <div class="card-circle l-bg-green text-white">SP07<span class="pump-text">0.25</span></div>
+                    <div class="card-circle l-bg-green text-white">SP08<span class="pump-text">4</span></div>
+                    <div class="card-circle l-bg-green text-white">SP09<span class="pump-text">4</span></div>
+                    <div class="card-circle l-bg-green text-white">SP10<span class="pump-text">5</span></div>
+                    <div class="card-circle l-bg-green text-white">SP11<span class="pump-text">9</span></div>
+                    <div class="card-circle l-bg-green text-white">SP12<span class="pump-text">10</span></div>
+                    <div class="card-circle l-bg-green text-white">SP13<span class="pump-text">3</span></div>
+                    <div class="card-circle l-bg-green text-white">SP14<span class="pump-text">1</span></div>
+                    <div class="card-circle l-bg-red text-white">SP15<span class="pump-text">--</span></div>
+                    <div class="card-circle l-bg-green text-white">SP16<span class="pump-text">0.25</span></div>
+                    <div class="card-circle l-bg-green text-white">SP17<span class="pump-text">0.25</span></div>
+                    <div class="card-circle l-bg-red text-white">SP18<span class="pump-text">--</span></div>
+                    <div class="card-circle l-bg-green text-white">SP19<span class="pump-text">0.25</span></div>
+                    <div class="card-circle l-bg-red text-white">SP20<span class="pump-text">0.25</span></div>
+                    <div class="card-circle l-bg-green text-white">SP21<span class="pump-text">0.25</span></div>
+                    <div class="card-circle l-bg-green text-white">SP22<span class="pump-text">0.25</span></div>
+                    <div class="card-circle l-bg-red text-white">SP23<span class="pump-text">0.25</span></div>
+                    <div class="card-circle l-bg-green text-white">SP24<span class="pump-text">0.25</span></div>
+                    <div class="card-circle l-bg-green text-white">SP25<span class="pump-text">0.25</span></div>
+                    <div class="card-circle l-bg-green text-white">SP26<span class="pump-text">7</span></div>
+                    <div class="card-circle l-bg-green text-white">SP27<span class="pump-text">0.25</span></div>
+                    <div class="card-circle l-bg-red text-white">SP28<span class="pump-text">0.25</span></div>
+                    <div class="card-circle l-bg-green text-white">SP29<span class="pump-text">0.25</span></div>
+                    <div class="card-circle l-bg-green text-white">SP30<span class="pump-text">40</span></div>
+                    <div class="card-circle l-bg-green text-white">SP31<span class="pump-text">30</span></div>
+                    <div class="card-circle l-bg-green text-white">SP32<span class="pump-text">25</span></div>
+                    <div class="card-circle l-bg-green text-white">SP33<span class="pump-text">0.25</span></div>
+                    <div class="card-circle l-bg-red text-white">SP34<span class="pump-text">0.25</span></div>
+                    <div class="card-circle l-bg-green text-white">SP35<span class="pump-text">0.25</span></div>
+                    <div class="card-circle l-bg-green text-white">SP36<span class="pump-text">8</span></div>
+                    <div class="card-circle l-bg-green text-white">SP37<span class="pump-text">3</span></div>
+                    <div class="card-circle l-bg-green text-white">SP38<span class="pump-text">14</span></div>
+                    <div class="card-circle l-bg-green text-white">SP39<span class="pump-text">20</span></div>
+                    <div class="card-circle l-bg-red text-white">SP40<span class="pump-text">10</span></div>
+                    </div>
+                    </div>
+								 
+								</div> 
+							</div>
+						  </div>
+						</div>						
+					  </div>
+					</div>
+					<!-- end Vertically Center -->
       </div>  
       <footer class="main-footer">
         <div class="footer-left">
@@ -496,6 +577,15 @@
 	}
 </script>
   <style>
+    .pump-text{
+      font-weight: 800;
+    background-color: black;
+    color: #89ff00;
+    padding: 0px 5px;
+    float: right;
+    font-size: 16px;
+    min-width: 40%;
+    }
   .card .card-header {
     border-bottom-color: #e7e7e7;
     line-height: 30px;
@@ -510,10 +600,20 @@
 .l-bg-green {
     background: linear-gradient(135deg, #008d53 0%, #5adb99 100%) !important;
     color: #fff;
+    float: left;
+    margin: 5px;
+    width: 18%;
+    padding: 5px;
+    border-radius: 4px;
 }
   .l-bg-red {
         background: linear-gradient(to right, #ff4040 0%, #ff7676 100%) !important;
 		color: #fff;
+    float: left;
+    margin: 5px;
+    width: 18%;
+    padding: 5px;
+    border-radius: 4px;
 }
   .card .card-type-3 .card-circle {
     display: inline-flex;
